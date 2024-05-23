@@ -6,9 +6,13 @@
 1. Need to generate private and public key for the local. Go to the following path `C:\Users\username\.ssh`. (Here i am using windows so for it path will be this and if folder won't exist then create new.)
 2. Run the following command:
   - For Windows:
-   ```ssh-keygen```
+   ```
+    ssh-keygen
+  ```
   - For Linux and Mac (Need rsa key):
-    ```ssh-keygen -t rsa -b 4096```
+    ```
+      ssh-keygen -t rsa -b 4096
+    ```
 4. Enter Name `But I prefer you should leave it as it is just press "enter"`, then provide appropriate passkey.
    ![image](https://github.com/nishant-p-7span/Public-Key-Authentication/assets/160576245/d29c7e59-7337-43dc-a995-15fc37851b4b)
 5. Now you will have two files one `id_rsa` and `id_rsa.pub`.
@@ -18,13 +22,19 @@
 1. Log in to the server using normal way.
 2. You are in `/home/ubuntu` path for the ubuntu based server.
 3. There you will be able to find `.ssh` folder using `ls -a` command.
-   ```cd .ssh```
-4. There `authorized_keys` named file open it with editor.
-   ```nano authorized_key```
-5. Here paste the contents of `id_rsa.pub` to the new line.
-6. Save the file and exit.
-7. Now go to the local machine, open terminal and it this command:
-   ```ssh <username>@<public-ipv4>```
+   ```
+     cd .ssh
+   ```
+5. There `authorized_keys` named file open it with editor.
+   ```
+     nano authorized_key
+   ```
+7. Here paste the contents of `id_rsa.pub` to the new line.
+8. Save the file and exit.
+9. Now go to the local machine, open terminal and it this command:
+   ```
+     ssh <username>@<public-ipv4>
+   ```
 
 ## Permission Denied issue:
 - This issue may occure due to unable to find the key.
