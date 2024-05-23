@@ -6,9 +6,9 @@
 1. Need to generate private and public key for the local. Go to the following path `C:\Users\username\.ssh`. (Here i am using windows so for it path will be this and if folder won't exist then create new.)
 2. Run the following command:
   - For Windows:
-   ```
-    ssh-keygen
-  ```
+    ```
+      ssh-keygen
+    ```
   - For Linux and Mac (Need rsa key):
     ```
       ssh-keygen -t rsa -b 4096
