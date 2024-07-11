@@ -44,7 +44,7 @@
 # Convert Keys using PuttyGen CLI:
 - convert PEM file to PPK
   ```
-  puttygen mykey.pem -o mykey.ppk
+  puttygen yourkey.pem -O private -o yourkey.ppk
   ```
 - PPK to PEM File
   ```
