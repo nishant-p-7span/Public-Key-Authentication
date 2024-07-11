@@ -40,3 +40,13 @@
 - This issue may occure due to unable to find the key.
 - While Creating key you many have changes the name of key to the `id-rsa` to something else.
 - Create the key again with default name (enter enter). then follow the steps again.
+
+# Convert Keys using PuttyGen CLI:
+- convert PEM file to PPK
+  ```
+  puttygen mykey.pem -o mykey.ppk
+  ```
+- PPK to PEM File
+  ```
+  puttygen server1.ppk -O private-openssh -o server1.pem
+  ```
