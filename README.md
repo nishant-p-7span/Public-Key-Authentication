@@ -13,6 +13,10 @@
     ```
       ssh-keygen -t rsa -b 4096
     ```
+  - Another key format:
+    ```
+    ssh-keygen -t ed25519 -C "your_email@example.com"
+    ```
 4. Enter Name `But I prefer you should leave it as it is just press "enter"`, then provide appropriate passkey.
    ![image](https://github.com/nishant-p-7span/Public-Key-Authentication/assets/160576245/d29c7e59-7337-43dc-a995-15fc37851b4b)
 5. Now you will have two files one `id_rsa` and `id_rsa.pub`.
